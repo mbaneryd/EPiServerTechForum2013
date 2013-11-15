@@ -1,0 +1,7 @@
+﻿wwwroot/obj/
+wwwroot/*.suo
+/appdata/blobs
+*.log
+/wwwroot/obj/Debug
+/wwwroot/bin/EPiServer.Templates.Alloy.Mvc.dll
+/wwwroot/bin/EPiServer.Templates.Alloy.Mvc.pdb

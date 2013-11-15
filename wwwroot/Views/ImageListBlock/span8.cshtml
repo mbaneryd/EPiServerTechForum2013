@@ -1,0 +1,17 @@
+﻿@model EPiServer.Templates.Alloy.Controllers.ImageListModel
+@Html.FullRefreshPropertiesMetaData()
+<h1 @Html.EditAttributes(x => x.Heading)>@Model.Heading</h1>
+
+<ul class="thumbnails" @Html.EditAttributes("Settings")>
+    @foreach (var image in Model.Images)
+    {
+        <li class="span4">
+            <div class="thumbnail">
+                <img src="@Url.ContentUrl(@image.ContentLink)" alt="@image.Name"/>
+            </div>
+            <div class="caption">
+                <h2>Copyright @image.Copyright</h2>
+            </div>
+        </li>
+    }
+</ul>
